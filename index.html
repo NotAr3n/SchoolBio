@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioStudy | Ecology & Biosphere Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts & Lucide Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo-area">
+                <i data-lucide="leaf" class="logo-icon"></i>
+                <h2>BioStudy</h2>
+            </div>
+            <nav class="nav-links">
+                <button class="nav-btn active" data-view="home"><i data-lucide="layout-dashboard"></i> Dashboard</button>
+                <button class="nav-btn" data-view="notes"><i data-lucide="book-open"></i> Study Notes</button>
+                <button class="nav-btn" data-view="quizzes"><i data-lucide="help-circle"></i> Quizzes</button>
+                <button class="nav-btn" data-view="flashcards"><i data-lucide="layers"></i> Flashcards</button>
+                <button class="nav-btn" data-view="progress"><i data-lucide="trophy"></i> My Progress</button>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="theme-toggle" class="theme-btn">
+                    <i data-lucide="moon" id="theme-icon"></i> <span id="theme-text">Dark Mode</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <header class="top-bar">
+                <h1 id="view-title">Dashboard</h1>
+                <div class="user-badge">
+                    <i data-lucide="user-check"></i> Study Group Ready
+                </div>
+            </header>
+
+            <div id="view-container">
+                <!-- Dynamically injected views -->
+            </div>
+        </main>
+    </div>
+
+    <script src="content.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
